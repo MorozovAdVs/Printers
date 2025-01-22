@@ -1,4 +1,4 @@
-set driverdirectory=\\dipaul.corp\NETLOGON\drv
+set driverdirectory=\\corp.corp\NETLOGON\drv
 for /r %driverdirectory% %%f in ("*.inf") do (pnputil /add-driver %%f /install)
 
 rundll32.exe printui.dll,PrintUIEntry /ia /u /m "HP Universal Printing PCL 6 (v7.2.0)"
